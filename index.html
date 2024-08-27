@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <style>
+      body {
+        color: black;
+      }
+      .common-banner-section {
+        padding: 70px 0;
+        background-color: black;
+        color: white;
+      }
+      .common-banner-section .back-btn {
+        margin-bottom: 26px;
+      }
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .back-btn span {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        vertical-align: middle;
+        border: 1px solid;
+        border-radius: 100%;
+        text-align: center;
+        padding: 4px 0;
+        margin-right: 10px;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      .common-banner-content .section-title {
+        margin-bottom: 12px;
+      }
+      .padding-bottom {
+        padding-bottom: 80px;
+      }
+      .padding-top {
+        padding-top: 80px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .section-title {
+        margin-bottom: 26px;
+      }
+      .text-center {
+        text-align: center !important;
+      }
+      .about-our-shop-section .row {
+        margin-top: 50px;
+      }
+      .row-reverse {
+        flex-direction: row-reverse;
+      }
+      .aboutpage-btm-sec .section-title {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .aboutpage-btm-sec .about-us-box {
+        padding: 20px 15px;
+        border: 1px solid black;
+        position: relative;
+      }
+      .about-us-section .about-us-box img {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+      .about-us-section .about-us-box h4 {
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+      }
+      .section-title h2 {
+        font-size: 41px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .section-title h3 {
+        font-size: 36px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+      }
+      .about-us-content p,
+      .common-banner-content p,
+      .section-title p,
+      .section-paragraph p {
+        font-size: 14px;
+        font-family: "Kanit", sans-serif;
+      }
+      .about-us-box p {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-family: "Kanit", sans-serif;
+      }
+      .aboutpage-btm-sec .section-title p{
+        margin-top: 24px;
+      }
+
+      .abt-shp-column-right img {
+        width: 100%;
+      }
+      .col-12{
+        flex: 0 0 auto;
+        width: 100%;
+      }
+      @media screen and (max-width: 767px){
+        .common-banner-section{
+          padding: 40px 0;
+        }
+        .common-banner-content .back-btn{
+          margin-bottom: 15px;
+        }
+        .section-title{
+          margin-bottom: 20px;
+        }
+        .aboutpage-btm-sec .section-title p{
+          margin-top: 15px;
+        }
+        .abt-shp-column-right, .about-our-shop-section .row{
+          margin-top: 30px;
+        }
+        .about-us-section .about-us-box {
+          margin-bottom: 20px;
+          padding: 15px;
+        }
+      }
+      @media screen and (max-width: 991px){
+        .section-title{
+          margin-bottom: 20px;
+        }
+        .about-us-page{
+          padding-top: 20px;
+          padding-bottom: 40px;
+        }
+        .padding-top{
+          padding-top: 40px;
+        }
+        .padding-bottom{
+          padding-bottom: 40px;
+        }
+        .section-title h2{
+          font-size: 26px;
+          font-weight: 600;
+        }
+        .section-title h3 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .about-us-section .about-us-box h4{
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <main
+      id="MainContent"
+      class="content-for-layout wrapper"
+      role="main"
+      tabindex="-1"
+    >
+      <div
+        id="shopify-section-template--20959368610096__main-page"
+        class="shopify-section"
+      >
+        <section class="common-banner-section">
+          <div class="container">
+            <div class="col-lg-6 col-12">
+              <div class="common-banner-content">
+                <a
+                  href="javascript:history.go(-1)"
+                  class="back-btn"
+                  style="cursor: pointer; text-decoration: none; color: inherit"
+                >
+                  <span class="svg-ic">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="5"
+                      viewBox="0 0 11 5"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.5791 2.28954C10.5791 2.53299 10.3818 2.73035 10.1383 2.73035L1.52698 2.73048L2.5628 3.73673C2.73742 3.90636 2.74146 4.18544 2.57183 4.36005C2.40219 4.53467 2.12312 4.53871 1.9485 4.36908L0.133482 2.60587C0.0480403 2.52287 -0.000171489 2.40882 -0.000171488 2.2897C-0.000171486 2.17058 0.0480403 2.05653 0.133482 1.97353L1.9485 0.210321C2.12312 0.0406877 2.40219 0.044729 2.57183 0.219347C2.74146 0.393966 2.73742 0.673036 2.5628 0.842669L1.52702 1.84888L10.1383 1.84875C10.3817 1.84874 10.5791 2.04609 10.5791 2.28954Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </span>
+                  Back to Home
+                </a>
+                <div class="section-title">
+                  <h2>About Us</h2>
+                </div>
+                <div class="section-paragraph">
+                  <p>
+                    At AboutUs, we are a dynamic and innovative company
+                    committed to providing comprehensive information and
+                    valuable insights on a wide range of topics.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        id="shopify-section-template--20959368610096__main"
+        class="shopify-section"
+      >
+        <section class="about-us-page padding-bottom padding-top">
+          <div class="container">
+            <div class="section-title">
+              <h2>Your Stylish for Every Occasion</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="about-us-content">
+                  <p>
+                    Introducing our versatile carryall, the ultimate accessory
+                    for those who value both style and functionality. Whether
+                    you're heading to work, running errands, or embarking on a
+                    weekend getaway, our carryall is designed to keep up with
+                    your busy lifestyle. Here is a description highlighting the
+                    features and benefits of our carryall
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="about-us-content">
+                  <p>
+                    Our carryall combines effortless style with practicality.
+                    Crafted with meticulous attention to detail, it boasts a
+                    timeless design that complements any outfit. The sleek
+                    silhouette, premium materials, and exquisite craftsmanship
+                    exude elegance and sophistication, making it a statement
+                    piece that turns heads wherever you go.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-our-shop-section padding-bottom">
+          <div class="container">
+            <div class="section-title text-center">
+              <h2>
+                Effortless Style and Functionality: Discover the Carryall You've
+                Been Waiting Fo
+              </h2>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-md-6 col-12">
+                <div class="abt-shp-column-left">
+                  <div class="section-title">
+                    <h3>Perfect The Carryall</h3>
+                  </div>
+                  <div class="section-paragraph">
+                    <p>
+                      Designed with functionality in mind, our carryall offers
+                      ample storage space to accommodate all your essentials.
+                      Multiple compartments and pockets allow you to organize
+                      your belongings efficiently, from your laptop and
+                      documents to your wallet, phone, and more. No matter how
+                      hectic your day gets, everything you need will be easily
+                      accessible and well-protected.
+                    </p>
+                    <p>
+                      Durability is key when it comes to a reliable carryall,
+                      and our bag doesn't disappoint. We use high-quality
+                      materials that are built to withstand the rigors of daily
+                      use. The sturdy handles and reinforced stitching ensure
+                      longevity, so you can confidently rely on our carryall to
+                      withstand the test of time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="abt-shp-column-right">
+                  <img
+                    src="//carryall-workdo.myshopify.com/cdn/shop/files/about-img1.png?v=1674798502"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center row-reverse">
+              <div class="col-md-6 col-12">
+                <div class="abt-shp-column-left">
+                  <div class="section-title">
+                    <h3>Elevate with Our Chic Carryall</h3>
+                  </div>
+                  <div class="section-paragraph">
+                    <p>
+                      Comfort is a priority, and we've designed our carryall
+                      with your convenience in mind. The adjustable and
+                      detachable shoulder strap allows you to carry it in a way
+                      that suits your preference and comfort level. Whether you
+                      choose to carry it by hand, wear it over the shoulder, or
+                      even convert it into a crossbody bag, our carryall adapts
+                      to your needs.
+                    </p>
+                    <p>
+                      Versatility is at the core of our carryall's design. It
+                      seamlessly transitions from day to night, from casual
+                      outings to professional settings. Whether you're attending
+                      meetings, going to the gym, or exploring a new city, our
+                      carryall is the perfect companion that effortlessly
+                      combines style and functionality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="abt-shp-column-right">
+                  <img
+                    src="//carryall-workdo.myshopify.com/cdn/shop/files/about-img2.png?v=1674798514"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="aboutpage-btm-sec about-us-section padding-bottom">
+          <div class="container">
+            <div class="section-title text-center">
+              <h2>About our services</h2>
+              <p>
+                Our mission is to empower individuals with knowledge and
+                facilitate meaningful connections through our platform.We
+                understand the importance of reliable and up-to-date information
+                in today's fast-paced world.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="about-us-box">
+                  <img
+                    src="//carryall-workdo.myshopify.com/cdn/shop/files/1._24x24.png?v=1674798525"
+                    loading="lazy"
+                  />
+                  <h4>Fast delivery</h4>
+                  <p>
+                    The specific delivery time will vary depending on the
+                    shipping address and the selected delivery option. Customers
+                    can track their order online to see the estimated delivery
+                    date.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="about-us-box">
+                  <img
+                    src="//carryall-workdo.myshopify.com/cdn/shop/files/2_24x24.png?v=1674798534"
+                    loading="lazy"
+                  />
+                  <h4>Many offers</h4>
+                  <p>
+                    CMS also offers a variety of training and technical
+                    assistance to help providers and state agencies meet their
+                    responsibilities under Medicare, Medicaid, and SCHIP.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="about-us-box">
+                  <img
+                    src="//carryall-workdo.myshopify.com/cdn/shop/files/3_24x24.png?v=1674798544"
+                    loading="lazy"
+                  />
+                  <h4>24/7 support</h4>
+                  <p>
+                    CMS Service support is available 24 hours a day, 7 days a
+                    week. You can reach them by phone, email, or chat. Here are
+                    the contact information for CMS Service support.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
